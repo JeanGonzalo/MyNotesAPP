@@ -1,0 +1,17 @@
+
+================================================================
+
+                CREATE INSERT INTO MYSQLDB
+
+================================================================
+
+    TIPS :
+
+— En el manifest se agrega otra actividad con el nombre de java .editorActivity y se jala el tema creado, para que 
+    todos los componentes de esa carpeta usen ese tema
+— Se utilizo lambda para traer java 8, no lo entendi muy bien, pero por l que se java 8 es la version mas estable de java
+— "dp" todos los material design su tamaño es "dp"
+— "sp" para el tamaño de texto
+— inputType             -> esta wea es de js, que especifica el tipo de dato que va a ingresas
+— autofill              -> esta wea es el auto completadp
+— android:gravity="top|start"     -> ajusta el texto arriba y a la izquierda
