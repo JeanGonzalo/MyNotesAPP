@@ -12,6 +12,31 @@
 — Se utilizo lambda para traer java 8, no lo entendi muy bien, pero por l que se java 8 es la version mas estable de java
 — "dp" todos los material design su tamaño es "dp"
 — "sp" para el tamaño de texto
-— inputType             -> esta wea es de js, que especifica el tipo de dato que va a ingresas
-— autofill              -> esta wea es el auto completadp
-— android:gravity="top|start"     -> ajusta el texto arriba y a la izquierda
+— inputType                         -> esta wea es de js, que especifica el tipo de dato que va a ingresas
+— autofill                          -> esta wea es el auto completadp
+— android:gravity="top|start"       -> ajusta el texto arriba y a la izquierda
+— ProgressDialog progressDialog;     -> esta es la parte de la espera, cuando vas a dar algo
+
+
+
+//Consumiendo de retrofit
+ApiCLient.java                      -> clase creada donde se consumira los servicios de retrofit
+Note.java                           -> clase creada para crear los campos de la tabla de base de datos, el nombre de la tabla era "notes" y el de la clase en java era "note"
+                                        osea que el nombre entre la clase y la tabla no deben ser iguales o no importa
+@Expose                             -> Es como para que los mismo datos que envio sean iguales a los de la tabla
+@Expose
+@SerializedName("id") private int id;           -> se usa el expose y el serialized para uqe cunado vaya a la base de datos lo reconozca, los campos son iguales a los de la base de datos
+
+ApiInterface                        -> Aqui se hace el POST GET de retrofit y entre otros metodos para poder usar retroftif
+
+
+//ahora se realizara la conexion se enviaran los datos
+// usamaremos el ApiInterface que es retrofit2 para poder enviar los adtos a la base de datos
+
+editorActivity.java                 -> Configuramos el uso de retrofit2
+
+la parte del call.equeue, esta parte se le dices al "progresdialog.dismiss" por que aqui ya dios repsues
+y entonces ya no debes de cargar
+
+y el if de ahi indica que si es que salio corre y si es que hay contenido es diferente de null
+osea solo parara cuando sea nul, mientras no ingresa al if
